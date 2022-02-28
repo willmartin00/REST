@@ -1,3 +1,9 @@
+# Explanations for HW3 solutions:
+1. For listBranches, I merely needed to change the options variable to include owner and repo variables from my test.js and then make it a GET request with the right directories
+2. For creating a new repo, it needed the name of the new repo in question in the form of a json on the options variable and a POST request with the correct directories
+3. For issue, it needed all the same variables as listBranches but with a POST request to /issues and a title and body located in the options json
+4. For enableWikiSupport, it uses a PATCH request to the repo with owner, which applies a true to the "this_wiki" var, enabling wiki on the repo in question
+
 # Introduction
 
 A *RESTful architecture*, is an architectural style ([Fielding](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)) for providing resources to clients using a set of request verbs and resource locations. A REST API allows a client to access resources provided by a service.
